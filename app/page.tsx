@@ -8,7 +8,7 @@ import CompanyInfo from "@/components/CompanyInfo";
 import PricingSection from "@/components/PricingSection";
 import YachtRentals from "@/components/YachtRentals";
 import LuxuryVillas from "@/components/LuxuryVillas";
-import Footer from "@/components/Footer";
+
 
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(
@@ -73,9 +73,7 @@ export default function Home() {
         <LuxuryVillas isVisible={visibleSections.has("luxury-villas")} />
       </section>
 
-      <section id="footer" ref={setSectionRef("footer")}>
-        <Footer />
-      </section>
+      
 
       {/* WhatsApp Floating Button */}
       <Link

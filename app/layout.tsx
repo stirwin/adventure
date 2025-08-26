@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { GeistSans } from "geist/font/sans"
 import { GeistMono } from "geist/font/mono"
 import "./globals.css"
+import Navbar from "@/components/NavbarNew"
+import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Adventure by Colombia - Luxury Tourism in Cartagena | Yacht Rentals & Colonial Villas",
@@ -67,17 +69,24 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <head>
         <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
+          html {
+            font-family: ${GeistSans.style.fontFamily};
+            --font-sans: ${GeistSans.variable};
+            --font-mono: ${GeistMono.variable};
+          }
         `}</style>
       </head>
-      <body>{children}</body>
+      <body className={`${GeistSans.variable} ${GeistMono.variable} font-sans antialiased`}>
+        <div className="flex flex-col min-h-screen">
+       
+            {children}
+          
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }
