@@ -35,7 +35,8 @@ export default function DestinationsPage() {
   return (
     <main className="min-h-screen bg-gray-50">
       {/* HERO */}
-      <div className="relative h-64 md:h-96 bg-gradient-to-r from-blue-600 to-blue-800">
+      <div className="relative h-64 md:h-96  bg-gradient-to-r from-blue-600 to-blue-800">
+        <Image src="/images/baru.jpg" alt="Luxury yachts in Cartagena" fill className="object-cover mix-blend-overlay" priority />
         <div className="absolute inset-0 bg-black/25" />
         <div className="relative max-w-7xl mx-auto mb-2 h-full flex flex-col justify-center px-6 lg:px-8">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">Discover Cartagena & Nearby Destinations</h1>
@@ -146,8 +147,8 @@ export default function DestinationsPage() {
 
         {/* CTA */}
         <div className="mt-12 mb-3 bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 text-white text-center">
-          <h3 className="text-2xl font-bold">Can't find the right trip?</h3>
-          <p className="text-blue-100 mt-3 max-w-2xl mx-auto">Our team can build a custom itinerary for groups and special events — contact us and we'll make it happen.</p>
+          <h3 className="text-2xl font-bold">Can&apos;t find the right trip?</h3>
+          <p className="text-blue-100 mt-3 max-w-2xl mx-auto">Our team can build a custom itinerary for groups and special events — contact us and we&apos;ll make it happen.</p>
           <a href="https://wa.me/573054384698?text=Hola%2C%20necesito%20un%20itinerario%20personalizado" target="_blank" rel="noopener noreferrer" className="inline-block mt-6 px-6 py-3 bg-white text-blue-700 rounded-lg font-semibold hover:bg-gray-100">Contact Us</a>
         </div>
       </div>

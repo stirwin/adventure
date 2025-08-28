@@ -3,7 +3,8 @@
 import * as React from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
+import { motion } from "framer-motion"
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious, type CarouselApi } from "@/components/ui/carousel"
 import { Plane } from "lucide-react"
 import { destinations, type Destination } from "@/data/destinations"
 
@@ -12,7 +13,7 @@ interface PopularDestinationsProps {
 }
 
 export default function PopularDestinations({ isVisible }: PopularDestinationsProps) {
-  const [api, setApi] = React.useState<any>(null)
+  const [api, setApi] = React.useState<CarouselApi | null>(null)
 
   // autoplay cada 5 segundos
   React.useEffect(() => {
@@ -24,10 +25,12 @@ export default function PopularDestinations({ isVisible }: PopularDestinationsPr
   }, [api])
 
   return (
-    <section
-      className={`py-16 px-6 transition-all duration-1000 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+    <motion.section
+      className="py-16 px-6"
+      initial={{ opacity: 0, y: 20 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >   
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -38,7 +41,7 @@ export default function PopularDestinations({ isVisible }: PopularDestinationsPr
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                   Popular <span className="text-gray-500">destinations</span>
                 </h2>
-                <p className="text-gray-600 mt-2">Experience the best of Cartagena's coastline</p>
+                <p className="text-gray-600 mt-2">Experience the best of Cartagena&apos;s coastline</p>
               </div>
             </div>
             <div className="md:ml-4">
@@ -134,6 +137,6 @@ export default function PopularDestinations({ isVisible }: PopularDestinationsPr
           </CarouselContent>
         </Carousel>
       </div>
-    </section>
+    </motion.section>
   )
 }

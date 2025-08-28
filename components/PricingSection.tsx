@@ -1,5 +1,6 @@
 "use client"
 
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Check, Star } from "lucide-react"
 
@@ -9,10 +10,12 @@ interface PricingSectionProps {
 
 export default function PricingSection({ isVisible }: PricingSectionProps) {
   return (
-    <section
-      className={`py-16 px-6 bg-gray-50 transition-all duration-1000 delay-300 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+    <motion.section 
+      className="py-16 px-6"
+      initial={{ opacity: 0, y: 20 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
@@ -169,6 +172,6 @@ export default function PricingSection({ isVisible }: PricingSectionProps) {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

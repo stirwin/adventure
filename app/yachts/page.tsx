@@ -43,7 +43,7 @@ export default function YachtsPage() {
       <div className="relative h-64 md:h-96 bg-gradient-to-r from-blue-600 to-blue-800">
         <div className="absolute inset-0 bg-black/30">
           <Image
-            src="/images/yachts/hero-bg.jpg"
+            src="/images/baru.jpg"
             alt="Luxury yachts in Cartagena"
             fill
             className="object-cover mix-blend-overlay"
@@ -225,7 +225,7 @@ export default function YachtsPage() {
 
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 md:p-12 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Can't find what you're looking for?</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">Can&apos;t find what you&apos;re looking for?</h2>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             Contact our yacht specialists to help you find the perfect vessel for your needs.
           </p>

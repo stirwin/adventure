@@ -1,19 +1,21 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import Image from "next/image"
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
-import { Users, Bed, Bath, Wifi, Utensils, Anchor } from "lucide-react"
+import { Users, Bed, Bath, Anchor } from "lucide-react"
 import { yachts as yachtsData, Yacht } from "@/data/yachts"
+import { CarouselApi } from "@/components/ui/carousel"
+import Link from "next/link"
 
 interface YachtRentalsProps {
   isVisible: boolean
 }
 
 export default function YachtRentals({ isVisible }: YachtRentalsProps) {
-  const [api, setApi] = React.useState<any>(null)
+  const [api, setApi] = React.useState<CarouselApi | null>(null)
 
   // autoplay cada 5 segundos
   React.useEffect(() => {
@@ -25,10 +27,12 @@ export default function YachtRentals({ isVisible }: YachtRentalsProps) {
   }, [api])
 
   return (
-    <section
-      className={`py-16 px-6 bg-white transition-all duration-1000 delay-100 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+    <motion.section 
+      className="py-16 px-6 bg-white transition-all duration-1000 delay-100"
+      initial={{ opacity: 0, y: 20 }}
+      animate={isVisible ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -39,7 +43,7 @@ export default function YachtRentals({ isVisible }: YachtRentalsProps) {
                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                   Yacht & Boat <span className="text-gray-500">Rentals</span>
                 </h2>
-                <p className="text-gray-600 mt-2">Experience the best of Cartagena's coastline</p>
+                <p className="text-gray-600 mt-2">Experience the best of Cartagena&apos;s coastline</p>
               </div>
             </div>
             <div className="md:ml-4">
@@ -178,6 +182,6 @@ export default function YachtRentals({ isVisible }: YachtRentalsProps) {
           </Carousel>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }

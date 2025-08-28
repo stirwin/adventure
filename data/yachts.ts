@@ -13,38 +13,116 @@ export interface Yacht {
     features?: string[] // etiquetas cortas
     tag?: string // "Premium", "Popular", etc.
     image: string
+    images?: string[] // added new property
   }
   
   export const yachts: Yacht[] = [
     {
-      id: "sea-princess",
-      name: "Sea Princess",
-      slug: "sea-princess",
+      id: "azimut-48",
+      name: "48' Azimut",
+      slug: "azimut-48",
       category: "yacht",
-      description: "Luxury yacht with full amenities and a professional crew. Perfect for private events and exclusive getaways.",
-      pricePerDay: 850,
+      description: "Luxury 48-foot Azimut yacht featuring 3 cabins and 2 bathrooms, fully air-conditioned for maximum comfort. Perfect for day charters and private events.",
+      pricePerDay: 1200,
       currency: "USD",
       capacity: 12,
       bedrooms: 3,
       bathrooms: 2,
-      features: ["WiFi", "Chef opcional", "A/C", "Deck amplio"],
-      tag: "Premium",
-      image: "/images/placeholder-0mmqi.png"
+      features: [
+        "3 cabins",
+        "2 bathrooms",
+        "Air conditioning",
+        "Spacious deck",
+        "Luxury interiors",
+        "Professional crew"
+      ],
+      tag: "Luxury",
+      image: "/images/yachts/azimut-48/1.jpeg",
+      images: [
+        "/images/yachts/azimut-48/1.jpeg",
+        "/images/yachts/azimut-48/2.jpeg",
+        "/images/yachts/azimut-48/3.jpeg",
+        "/images/yachts/azimut-48/4.jpeg",
+        "/images/yachts/azimut-48/5.jpeg",
+        "/images/yachts/azimut-48/6.jpeg",
+        "/images/yachts/azimut-48/7.jpeg",
+        "/images/yachts/azimut-48/8.jpeg",
+        "/images/yachts/azimut-48/9.jpeg",
+        "/images/yachts/azimut-48/10.jpeg",
+        "/images/yachts/azimut-48/11.jpeg",
+        "/images/yachts/azimut-48/12.jpeg",
+        "/images/yachts/azimut-48/13.jpeg",
+        "/images/yachts/azimut-48/14.jpeg",
+        "/images/yachts/azimut-48/15.jpeg",
+        "/images/yachts/azimut-48/16.jpeg",
+        
+      ]
     },
     {
-      id: "ocean-runner",
-      name: "Ocean Runner",
-      slug: "ocean-runner",
-      category: "boat",
-      description: "Fast speed boat ideal for island hopping and short excursions. Snorkel gear included.",
-      pricePerDay: 420,
+      id: "barakat",
+      name: "Barakat",
+      slug: "barakat",
+      category: "yacht",
+      description: "Luxury 38-foot yacht with spacious deck and comfortable seating for up to 14 passengers. Perfect for group outings and special events.",
+      pricePerDay: 780,
       currency: "USD",
-      capacity: 8,
-      bathrooms: 1,
-      features: ["Snorkel gear", "Nevera", "Bimini top"],
-      tag: "Popular",
-      image: "/images/placeholder-kq2vh.png"
+      capacity: 14,
+      features: [
+        "Spacious deck area",
+        "Comfortable seating",
+        "Sound system",
+        "Shaded areas",
+        "Capacity for 14 passengers"
+      ],
+      tag: "Premium",
+      image: "/images/yachts/barakat/1.jpeg",
+      images: [
+        "/images/yachts/barakat/1.jpeg",
+        "/images/yachts/barakat/2.jpeg",
+        "/images/yachts/barakat/3.jpeg",
+        "/images/yachts/barakat/4.jpeg",
+        "/images/yachts/barakat/5.jpeg",
+        "/images/yachts/barakat/6.jpeg",
+        "/images/yachts/barakat/7.jpeg",
+        "/images/yachts/barakat/8.jpeg",
+        "/images/yachts/barakat/9.jpeg",
+        "/images/yachts/barakat/10.jpeg"
+      ]
     },
+    {
+      id: "sthepanie-1",
+      name: "Sthepanie 1",
+      slug: "sthepanie-1",
+      category: "boat",
+      description: "33-foot boat with complete sound system, bow sunbeds, sun lounger seat and toilet. Equipped with two powerful 200 horsepower engines.",
+      pricePerDay: 680,
+      currency: "USD",
+      capacity: 12,
+      features: [
+        "Complete sound system",
+        "Front sunbeds",
+        "Sun lounging seat",
+        "Toilet on board",
+        "2 engines of 200HP",
+        "Capacity for 12 people"
+      ],
+      tag: "Popular",
+      image: "/images/yachts/sthepanie-1/1.jpeg",
+      images: [
+        "/images/yachts/sthepanie-1/1.jpeg",
+        "/images/yachts/sthepanie-1/2.jpeg",
+        "/images/yachts/sthepanie-1/3.jpeg",
+        "/images/yachts/sthepanie-1/4.jpeg",
+        "/images/yachts/sthepanie-1/5.jpeg",
+        "/images/yachts/sthepanie-1/6.jpeg",
+        "/images/yachts/sthepanie-1/7.jpeg",
+        "/images/yachts/sthepanie-1/8.jpeg",
+        "/images/yachts/sthepanie-1/9.jpeg",
+        "/images/yachts/sthepanie-1/10.jpeg",
+        "/images/yachts/sthepanie-1/11.jpeg"
+      ]
+    },
+   
     {
       id: "caribbean-wind",
       name: "Caribbean Wind",
@@ -59,20 +137,6 @@ export interface Yacht {
       features: ["Cocina", "Equipo de música", "Sombrilla"],
       tag: "Family",
       image: "/images/caribbean-catamaran.png"
-    },
-    {
-      id: "fishers-dream",
-      name: "Fisher's Dream",
-      slug: "fishers-dream",
-      category: "fishing",
-      description: "Fishing boat equipped for expeditions — ideal para pesca deportiva y excursiones de día.",
-      pricePerDay: 320,
-      currency: "USD",
-      capacity: 6,
-      bathrooms: 1,
-      features: ["Equipo de pesca", "Nevera grande"],
-      tag: "Adventure",
-      image: "/images/cartagena-fishing-boat.png"
     },
     {
       id: "fiesta-marina",

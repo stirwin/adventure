@@ -83,7 +83,7 @@ export interface Destination {
       currency: "USD",
       duration: "Full day",
       tag: "Classic",
-      image: "/images/playa-blanca.png"
+      image: "/images/baru.jpg"
     }
   ]
   

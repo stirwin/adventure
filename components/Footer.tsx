@@ -1,7 +1,6 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
-import { Plane, MessageCircle } from "lucide-react"
+import { Plane, MessageCircle, Mail, Phone, Instagram } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -18,16 +17,25 @@ export default function Footer() {
               Experience the magic of Cartagena with our premium travel services. From luxury accommodations to
               unforgettable adventures.
             </p>
-            <div className="flex space-x-4">
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 cursor-pointer transition-colors">
-                <span className="text-xs font-bold">f</span>
-              </div>
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 cursor-pointer transition-colors">
-                <span className="text-xs font-bold">ig</span>
-              </div>
-              <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 cursor-pointer transition-colors">
-                <span className="text-xs font-bold">tw</span>
-              </div>
+            <div className="flex space-x-3">
+              <a 
+                href="https://www.instagram.com/adventurebycolombia?utm_source=qr&igsh=OGhrdGtxdmVoM24=" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4 text-white" />
+              </a>
+              <a 
+                href="https://wa.me/573054384698" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center hover:bg-green-600 transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle className="w-4 h-4 text-white" />
+              </a>
             </div>
           </div>
 
@@ -112,24 +120,33 @@ export default function Footer() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500 rounded-full flex-shrink-0"></div>
-                <p className="text-gray-300">+57 300 123 4567</p>
+                <Phone className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <a href="tel:+573054384698" className="text-gray-300 hover:text-white transition-colors">
+                  +57 305 438 4698
+                </a>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 bg-green-500 rounded-full flex-shrink-0"></div>
-                <p className="text-gray-300">info@adventurebycolombia.com</p>
+                <Mail className="w-4 h-4 text-green-500 flex-shrink-0" />
+                <a href="mailto:adventurebycolombia@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  adventurebycolombia@gmail.com
+                </a>
               </div>
-              <Button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-4 w-full">
+              <a 
+                href="https://wa.me/573054384698" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg mt-4 w-full transition-colors"
+              >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 WhatsApp Us
-              </Button>
+              </a>
             </div>
           </div>
         </div>
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400 text-sm">© 2024 Adventure by Colombia. All rights reserved.</p>
+          <p className="text-gray-400 text-sm">© 2025 Adventure by Colombia. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
               Privacy Policy
