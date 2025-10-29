@@ -124,7 +124,7 @@ export interface Yacht {
     },
     {
       id: "botecito-hannia-29ft",
-      name: "Botecito - eslora 29ft (Hannia)",
+      name: "Botecito - eslora 29ft",
       slug: "botecito-hannia-29ft",
       category: "boat",
       description: "Nulo",
@@ -202,7 +202,7 @@ export interface Yacht {
     },
     {
       id: "merengue-41ft-hannia",
-      name: "Merengue 41ft (Hannia)",
+      name: "Merengue 41ft",
       slug: "merengue-41ft-hannia",
       category: "boat",
       description: "Nulo",
@@ -215,7 +215,7 @@ export interface Yacht {
     },
     {
       id: "summit-29ft-hannia",
-      name: "Summit 29ft (Hannia)",
+      name: "Summit 29ft ",
       slug: "summit-29ft-hannia",
       category: "boat",
       description: "Nulo",
