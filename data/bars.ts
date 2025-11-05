@@ -22,11 +22,11 @@ export const bars: Bar[] = [
     id: "tu-candela",
     slug: "tu-candela",
     name: "Tu Candela",
-    shortDescription:
-      'El clásico de la rumba cartagenera: salsa, champeta y buena energía en el corazón de Getsemaní.',
-    description:
-      'Un ícono de la vida nocturna de Cartagena, Tu Candela es el lugar perfecto para bailar salsa y champeta hasta el amanecer. Con un ambiente auténtico y música en vivo, este lugar atrae tanto a locales como a turistas que buscan experimentar la verdadera fiesta cartagenera. No te pierdas sus noches de orquesta en vivo y sus cócteles refrescantes.',
-    neighborhood: 'Getsemaní',
+   shortDescription:
+  "A Cartagena nightlife classic: salsa, champeta, and great energy in the heart of Getsemaní.",
+description:
+  "A true icon of Cartagena’s nightlife, Tu Candela is the perfect spot to dance salsa and champeta until sunrise. With an authentic atmosphere and live music, it attracts both locals and travelers looking to experience the real Cartagena party scene. Don’t miss the nights with live bands and their refreshing cocktails." ,
+ neighborhood: 'Getsemaní',
     type: 'salsa',
     music: ['salsa', 'champeta', 'reggaeton'],
     priceRange: '$$',
@@ -43,11 +43,11 @@ export const bars: Bar[] = [
     id: "cafe-havana",
     slug: "cafe-havana",
     name: "Café Havana",
-    shortDescription:
-      'Un pedacito de Cuba en Cartagena, con salsa en vivo y mojitos que te transportan a La Habana.',
-    description:
-      'Este legendario club nocturno recrea la magia de los años 50 cubanos con su decoración vintage y su música en vivo. Los jueves son especialmente populares, cuando la orquesta en vivo hace bailar a todo el mundo. El ambiente es caliente, la música es contagiosa y los mojitos son legendarios. Ideal para los amantes de la salsa y la cultura cubana.',
-    neighborhood: 'Getsemaní',
+   shortDescription:
+  "A slice of Cuba in Cartagena, with live salsa and mojitos that transport you straight to Havana.",
+description:
+  "This legendary nightclub recreates the magic of 1950s Cuba with vintage décor and live salsa bands. Thursdays are especially popular when the orchestra turns the place into a full dance celebration. The music is contagious and the mojitos are legendary. Perfect for lovers of salsa and Cuban culture.",
+ neighborhood: 'Getsemaní',
     type: 'salsa',
     music: ['salsa', 'son cubano'],
     priceRange: '$$',
@@ -67,10 +67,10 @@ export const bars: Bar[] = [
     slug: "donde-fidel",
     name: "Donde Fidel",
     shortDescription:
-      'El bar más pequeño de Cartagena, famoso por sus cócteles y ambiente bohemio en el corazón del Centro Histórico.',
-    description:
-      'Con apenas unas cuantas mesas y una barra pequeña, Donde Fidel es una institución en Cartagena. El lugar perfecto para cócteles artesanales en un ambiente íntimo y acogedor. Prueba su famosa "Cosa Loca" o deja que el barman te sorprenda con una creación especial. Ideal para empezar la noche con estilo.',
-    neighborhood: 'Centro Histórico',
+  "A small but iconic bar, famous for its cocktails and bohemian vibe right in the Historic Center.",
+description:
+  "With just a few tables and a small bar, Donde Fidel is a true institution in Cartagena. It’s the perfect place for handcrafted cocktails in a cozy and intimate atmosphere. Try their famous “Cosa Loca” or let the bartender surprise you with a special creation. Ideal to start the night with style.",
+ neighborhood: 'Centro Histórico',
     type: 'cocktail',
     music: ['salsa'],
     priceRange: '$$',
@@ -89,11 +89,11 @@ export const bars: Bar[] = [
     id: "alquimico",
     slug: "alquimico",
     name: "Alquímico",
-    shortDescription:
-      'Uno de los mejores bares de cócteles de Latinoamérica, con una terraza espectacular y mixología de autor.',
-    description:
-      'Ubicado en una mansión restaurada de tres pisos, Alquímico es mucho más que un bar. En la planta baja, la barra principal sirve cócteles innovadores con ingredientes locales. El segundo piso alberga un restaurante, mientras que la terraza del tercer piso ofrece vistas espectaculares de la ciudad. No te pierdas su cóctel insignia, el "El Dorado", una creación exclusiva que combina ron, jugo de piña, miel de abejas y especias.',
-    neighborhood: 'Centro Histórico',
+   shortDescription:
+  "One of the top cocktail bars in Latin America, featuring a stunning rooftop and signature mixology.",
+description:
+  "Located inside a restored three-story mansion, Alquímico is much more than a bar. The main floor serves innovative cocktails with local ingredients. The second level offers a dining experience, while the rooftop terrace boasts stunning city views. Don’t miss their signature cocktail, “El Dorado,” crafted with rum, pineapple, honey and exotic spices.",
+neighborhood: 'Centro Histórico',
     type: 'cocktail',
     music: ['electro', 'house', 'ambient'],
     priceRange: '$$$',
@@ -113,10 +113,10 @@ export const bars: Bar[] = [
     slug: "the-clock-pub",
     name: "The Clock Pub",
     shortDescription:
-      'Pub para relajarse, ver deportes y tomar cervezas; música internacional, ambiente casual.',
-    description:
-      'El punto "sports bar" por excelencia en el Centro. Pantallas con partidos, menú de pub food y buena rotación de cervezas. Ideal para grupos que buscan un plan relajado antes de seguir la ruta nocturna o como base para ver el juego y quedarse de charlas.',
-    neighborhood: 'Centro Histórico',
+  "A casual sports-friendly pub to relax, drink beer, and enjoy international music.",
+description:
+  "The go-to sports bar in Cartagena’s Historic Center. Big screens for game nights, a full menu of comfort pub food, and a great selection of beers. Ideal for groups seeking a laid-back start before continuing the nightlife adventure, or simply a spot to hang out and enjoy the match.",
+neighborhood: 'Centro Histórico',
     type: 'pub',
     music: ['rock', 'pop'],
     priceRange: '$',
@@ -135,11 +135,11 @@ export const bars: Bar[] = [
     id: "la-movida",
     slug: "la-movida",
     name: "La Movida",
-    shortDescription:
-      'Uno de los clubs más exclusivos de la ciudad, con DJs internacionales y fiestas temáticas.',
-    description:
-      'Si buscas una experiencia de club de lujo, La Movida es el lugar. Con una decoración vanguardista y un sistema de sonido de última generación, este club atrae a los mejores DJs internacionales. Los cócteles son una obra de arte y el servicio es impecable. El dress code es estricto (elegante) y las reservas son recomendables, especialmente los fines de semana.',
-    neighborhood: 'Bocagrande',
+   shortDescription:
+  "One of the most exclusive clubs in the city, with international DJs and themed parties.",
+description:
+  "If you’re seeking a luxury clubbing experience, La Movida is the place to be. With bold, modern décor and a state-of-the-art sound system, it attracts top DJs and a stylish crowd. Cocktails are crafted like artworks and service is premium. Dress code is elegant and reservations are highly recommended on weekends.",
+neighborhood: 'Bocagrande',
     type: 'club',
     music: ['house', 'reggaeton', 'hits'],
     priceRange: '$$$',
@@ -158,11 +158,11 @@ export const bars: Bar[] = [
     id: "el-baron",
     slug: "el-baron",
     name: "El Barón Café & Liquor Bar",
-    shortDescription:
-      'Elegante bar de cócteles en la Plaza San Pedro, ideal para un afterwork sofisticado.',
-    description:
-      'Ubicado en la encantadora Plaza San Pedro, El Barón es el lugar perfecto para cócteles artesanales en un ambiente refinado. Durante el día funciona como una cafetería de especialidad, y por la noche se transforma en un exclusivo bar de cócteles. Prueba su "Cartagena Mule" o el clásico "Aguardiente Sour" con un toque local. La terraza es uno de los mejores lugares para ver la puesta de sol en la ciudad amurallada.',
-    neighborhood: 'Centro Histórico',
+  shortDescription:
+  "A refined cocktail bar in Plaza San Pedro, perfect for a sophisticated evening out.",
+description:
+  "Located in the charming Plaza San Pedro, El Barón is the perfect place for artisanal cocktails in an elegant atmosphere. By day, it serves specialty coffee; by night, it transforms into an exclusive mixology haven. Try the “Cartagena Mule” or the local twist on the classic “Aguardiente Sour.” The outdoor tables offer some of the best sunset views inside the walled city.",
+neighborhood: 'Centro Histórico',
     type: 'cocktail',
     music: ['jazz', 'ambient'],
     priceRange: '$$$',
@@ -180,11 +180,11 @@ export const bars: Bar[] = [
     id: "la-jugada",
     slug: "la-jugada",
     name: "La Jugada Club House",
-    shortDescription:
-      'Terraza con piscina, DJs y ambiente festivo en un hotel boutique del Centro Histórico.',
-    description:
-      'Este exclusivo club en la azotea del Hotel Capellán Boutique combina piscina, lounge y fiesta. Durante el día es un relajado club de piscina, y por la noche se transforma en una de las fiestas más animadas de la ciudad. Las camas junto a la piscina se pueden reservar con botella, y la música electrónica de los DJs locales mantiene la energía alta hasta altas horas de la madrugada.',
-    neighborhood: 'Centro Histórico',
+  shortDescription:
+  "Rooftop pool, DJs, and a festive atmosphere inside a boutique hotel in Cartagena’s Historic Center.",
+description:
+  "This exclusive rooftop club at the Capellán Boutique Hotel blends pool vibes with electric nightlife. During the day, it’s a relaxing pool club—but at night, it becomes one of the liveliest parties in the city. Poolside beds can be booked with bottle service, and the lineup of local DJs keeps the energy high all night long.",
+neighborhood: 'Centro Histórico',
     type: 'club',
     music: ['house', 'electro', 'hits'],
     priceRange: '$$$',
@@ -202,11 +202,11 @@ export const bars: Bar[] = [
     id: "el-arsenal-rum-box",
     slug: "el-arsenal-rum-box",
     name: "El Arsenal: The Rum Box",
-    shortDescription:
-      'Especializado en rones de todo el mundo, con degustaciones y cócteles creativos en un ambiente acogedor.',
-    description:
-      'Los amantes del ron encontrarán en El Arsenal su paraíso personal. Con una selección de más de 100 rones de todo el mundo, este pequeño y acogedor bar es ideal para una cena íntima o una noche de cócteles sofisticados. El personal es muy conocedor y puede guiarte a través de una degustación o recomendarte el cóctel perfecto según tus gustos. Prueba su "Cartagena Old Fashioned" con ron añejo y chocolate local.',
-    neighborhood: 'Getsemaní',
+   shortDescription:
+  "A rum-focused bar with tastings, creative cocktails, and a warm, intimate atmosphere.",
+description:
+  "Rum lovers will find their paradise at El Arsenal, with a selection of over 100 rums from around the world. It’s a cozy and charming space, perfect for a romantic dinner or a sophisticated night out. The staff are true rum experts and can guide you through a tasting or help you find the perfect cocktail. Don’t miss their “Cartagena Old Fashioned” with aged rum and local chocolate.",
+neighborhood: 'Getsemaní',
     type: 'bar',
     music: ['latin', 'pop', 'mix'],
     priceRange: '$$',
