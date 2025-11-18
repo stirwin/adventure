@@ -18,12 +18,13 @@ export interface House {
 }
 
 export const houses: House[] = [
+
     {
         id: "casa-santamarta-exclusive",
         slug: "casa-santamarta-exclusive",
         name: "Casa Santa Marta Exclusive",
         shortDescription: "Spacious villa with pool and sound terrace in a prime location.",
-        pricePerNight: 720,
+        pricePerNight: 0,
         currency: "USD",
         capacity: 15,
         bedrooms: 7,
@@ -59,7 +60,7 @@ export const houses: House[] = [
         slug: "san-diego-mansion",
         name: "San Diego Mansion",
         shortDescription: "Luxurious colonial mansion in the heart of San Diego, Cartagena's historic center.",
-        pricePerNight: 850,
+        pricePerNight: 0,
         currency: "USD",
         capacity: 14,
         bedrooms: 7,
@@ -98,7 +99,7 @@ export const houses: House[] = [
         slug: "casa-pirre",
         name: "Casa Pirre",
         shortDescription: "Elegant colonial house with modern amenities in the heart of Getsemaní.",
-        pricePerNight: 650,
+        pricePerNight: 0,
         currency: "USD",
         capacity: 10,
         bedrooms: 5,
@@ -128,7 +129,7 @@ export const houses: House[] = [
         slug: "casa-upper",
         name: "Casa Upper",
         shortDescription: "Modern luxury villa with panoramic ocean views in Bocagrande.",
-        pricePerNight: 950,
+        pricePerNight: 0,
         currency: "USD",
         capacity: 12,
         bedrooms: 6,
@@ -152,5 +153,118 @@ export const houses: House[] = [
             "/images/villas/casa_upper/5.jpg"
         ],
         location: "Bocagrande - Cartagena"
-    }
+    },
+        {
+        id: "apto-1108",
+        slug: "apto-1108",
+        name: "APTO 1108 - Nuevo Conquistador",
+        shortDescription: "Cozy 1-bedroom apartment with lake and partial sea view in Nuevo Conquistador building.",
+        pricePerNight: 0,
+        currency: "USD",
+        capacity: 4,
+        bedrooms: 1,
+        bathrooms: 1,
+        features: [
+            "1 Bedroom with semi-double bed, single bed, and pull-out bed",
+            "1 Bathroom",
+            "Air conditioning",
+            "TV",
+            "Fully equipped kitchen for quick meals",
+            "Balcony with lake and partial sea view",
+            "Additional single bed in the living area"
+        ],
+        tag: "Apartment",
+        location: "Nuevo Conquistador Building",
+        image: "/images/villas/1108/1.png",
+        images: [
+            "/images/villas/1108/1.png",
+            "/images/villas/1108/2.png",
+            "/images/villas/1108/3.png",
+
+        ]
+    },
+    {
+        id: "apto-812",
+        slug: "apto-812",
+        name: "APTO 812 - Nuevo Conquistador",
+        shortDescription: "Spacious 2-bedroom apartment in Nuevo Conquistador building with lake view.",
+        pricePerNight: 0,
+        currency: "USD",
+        capacity: 6,
+        bedrooms: 2,
+        bathrooms: 2,
+        features: [
+            "2 Bedrooms (2 semi-double beds + 1 double bed)",
+            "2 Bathrooms (1 social, 1 private)",
+            "Air conditioning in both bedrooms",
+            "TV in bedroom and living room",
+            "Gas kitchen",
+            "Large sofa bed",
+            "Balcony with lake view"
+        ],
+        tag: "Apartment",
+        location: "Nuevo Conquistador Building",
+        image: "/images/villas/812/1.png",
+        images: [
+            "/images/villas/812/1.png",
+            "/images/villas/812/2.png",
+        ]
+    },
+    {
+        id: "estudio-1209",
+        slug: "estudio-1209",
+        name: "ESTUDIO 1209 - Nuevo Conquistador",
+        shortDescription: "Modern studio apartment in Nuevo Conquistador building, perfect for small groups.",
+        pricePerNight: 0,
+        currency: "USD",
+        capacity: 4,
+        bedrooms: 1,
+        bathrooms: 1,
+        features: [
+            "Studio apartment (35m²)",
+            "2 Double beds + 1 single sofa bed",
+            "1 Bathroom",
+            "Air conditioning",
+            "Cable TV",
+            "Fully equipped kitchenette",
+            "Refrigerator",
+            "Electronic door entry"
+        ],
+        tag: "Studio",
+        location: "Nuevo Conquistador Building, Av. Almirante Brion",
+        image: "/images/villas/1209/1.png",
+        images: [
+            "/images/villas/1209/1.png",
+            "/images/villas/1209/2.png",
+            "/images/villas/1209/3.png",
+        ]
+    },
+    {
+        id: "apto-1919",
+        slug: "apto-1919",
+        name: "APTO 1919 - Nuevo Conquistador",
+        shortDescription: "Beautiful 1-bedroom apartment with stunning views of the lake, sea, and Tierra Bomba Island.",
+        pricePerNight: 0,
+        currency: "USD",
+        capacity: 6,
+        bedrooms: 1,
+        bathrooms: 1,
+        features: [
+            "1 Bedroom with semi-double bed and single bed",
+            "Additional single pull-out bed and semi-double bed in living area",
+            "1 Bathroom",
+            "Air conditioning in bedroom and living room",
+            "TV",
+            "Fully equipped gas kitchen for quick meals",
+            "Balcony with panoramic views of lake, sea, Tierra Bomba Island, and Hilton"
+        ],
+        tag: "Apartment",
+        location: "Nuevo Conquistador Building",
+        image: "/images/villas/1919/1.jpeg",
+        images: [
+            "/images/villas/1919/1.jpeg",
+            "/images/villas/1919/2.jpeg",
+           
+        ]
+    },
     ]

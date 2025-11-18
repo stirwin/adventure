@@ -59,13 +59,7 @@ const HouseCard = ({ house }: { house: typeof houses[0] }) => {
         </div>
         
         <div className="flex items-center justify-between">
-          <div>
-            <p className="text-sm text-gray-500">Price per night</p>
-            <p className="text-xl font-bold text-amber-600">
-              ${house.pricePerNight.toLocaleString()}
-              <span className="text-sm font-normal text-gray-500"> {house.currency}</span>
-            </p>
-          </div>
+          
           <Link 
             href={`/house/${house.slug || house.id}`}
             className="rounded-lg bg-amber-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-amber-600"

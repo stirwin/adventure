@@ -216,12 +216,7 @@ export default function YachtsPage() {
 
                   <div className="border-t pt-4">
                     <div className="flex items-center justify-between">
-                      <div>
-                        <p className="text-2xl font-bold text-gray-900">
-                          ${yacht.pricePerDay.toLocaleString()}
-                        </p>
-                        <p className="text-sm text-gray-500">per day</p>
-                      </div>
+                      
                       <Link
                         href={`https://wa.me/573054384698?text=Hola%2C%20estoy%20interesado%20en%20rentar%20el%20yate%20${encodeURIComponent(
                           yacht.name

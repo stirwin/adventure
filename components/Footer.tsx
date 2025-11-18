@@ -1,6 +1,7 @@
 "use client"
 
 import { Plane, MessageCircle, Mail, Phone, Instagram } from "lucide-react"
+import Link from "next/link"
 
 export default function Footer() {
   return (
@@ -44,66 +45,66 @@ export default function Footer() {
             <h3 className="text-lg font-semibold text-green-400">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/destinations" className="text-gray-300 hover:text-white transition-colors">
                   Vacation Rentals
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/destinations" className="text-gray-300 hover:text-white transition-colors">
                   Tours & Day Trips
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/yachts" className="text-gray-300 hover:text-white transition-colors">
                   Boat Rentals
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/yachts" className="text-gray-300 hover:text-white transition-colors">
                   Yacht Charters
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/houses" className="text-gray-300 hover:text-white transition-colors">
                   Luxury Villas
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/houses" className="text-gray-300 hover:text-white transition-colors">
                   Colonial Houses
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* Destinations */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-green-400">Popular Destinations</h3>
+            <h3 className="text-lg font-semibold text-green-400">Things to do</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Islas del Rosario
-                </a>
+                <Link href="/places" className="text-gray-300 hover:text-white transition-colors">
+                  Historic center
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Parque Tayrona
-                </a>
+                <Link href="/places" className="text-gray-300 hover:text-white transition-colors">
+                  Palacio de la Inquisición
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/places" className="text-gray-300 hover:text-white transition-colors">
                   San Basilio de Palenque
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Mompox
-                </a>
+                <Link href="/places" className="text-gray-300 hover:text-white transition-colors">
+                  Museo del Oro de Cartagena                
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                  Santa Marta
-                </a>
+                <Link href="/places" className="text-gray-300 hover:text-white transition-colors">
+                  Convento de la Popa                
+                </Link>
               </li>
             </ul>
           </div>
@@ -148,15 +149,11 @@ export default function Footer() {
         <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">© 2025 Adventure by Colombia. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">
-              Cookie Policy
-            </a>
+          
+            <Link href="/terms-conditions" className="text-gray-400 hover:text-white text-sm transition-colors">
+              Terms of Service and Privacy Policy
+            </Link>
+          
           </div>
         </div>
       </div>

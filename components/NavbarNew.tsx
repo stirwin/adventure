@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -66,6 +65,8 @@ export default function Navbar() {
                   ? "/yachts"
                   : item === "HOUSE"
                   ? "/house"
+                  : item === "TOURS"
+                  ? "/destinations"
                   : "#"
               }
               className="text-gray-700 hover:text-gray-900 font-medium text-xs lg:text-sm"

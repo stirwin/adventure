@@ -289,12 +289,7 @@ export default function HouseDetailPage() {
           <div className="lg:sticky lg:top-8 h-fit">
             <div className="bg-white rounded-xl shadow-sm p-6">
               <div className="flex justify-between items-start mb-6">
-                <div>
-                  <p className="text-2xl font-bold text-gray-900">
-                    ${house.pricePerNight.toLocaleString()}
-                  </p>
-                  <p className="text-gray-500">per night</p>
-                </div>
+                
                 <div className="flex items-center">
                   <Star className="w-5 h-5 text-amber-400 fill-amber-400" />
                   <span className="ml-1">5.0</span>
