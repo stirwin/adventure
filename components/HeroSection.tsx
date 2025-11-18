@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Button } from "@/components/ui/button"
 import {  Anchor, Package, HomeIcon } from "lucide-react"
 
 import type { Variants, Transition } from 'framer-motion';
 import React from "react"
 import Navbar from "./NavbarNew"
+import Link from "next/link";
 
 // Animation variants with proper typing
 const container: Variants = {
@@ -206,11 +206,12 @@ export default function HeroSection() {
                   whileHover={{ scale: 1.1, opacity: 0 }}
                   transition={{ duration: 0.3 }}
                 />
-                <Button 
-                  className="relative z-10 w-full bg-green-500 hover:bg-green-600 text-white px-6 sm:px-8 py-2 text-sm sm:text-base rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                <Link 
+                  href="/destinations"
+                  className="relative z-10 w-full bg-green-500 hover:bg-green-600 text-white p-8 py-4 text-sm sm:text-base rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Discover
-                </Button>
+                </Link>
               </div>
             </div>
           </motion.div>

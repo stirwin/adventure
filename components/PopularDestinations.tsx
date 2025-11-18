@@ -78,63 +78,74 @@ export default function PopularDestinations({ isVisible }: PopularDestinationsPr
           </div>
 
           <CarouselContent className="-ml-2 md:-ml-4">
-            {destinations.map((dest: Destination) => (
-              <CarouselItem key={dest.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
-                <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  <div className="h-48 relative overflow-hidden">
-                    <Image
-                      src={dest.image}
-                      alt={dest.name}
-                      width={500}
-                      height={500}
-                      className="w-full h-full object-cover"
-                    />
-                    {dest.tag && (
-                      <div className="absolute top-4 left-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                        {dest.tag}
-                      </div>
-                    )}
-                  </div>
+  {destinations.map((dest: Destination) => (
+    <CarouselItem key={dest.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
 
-                  <div className="p-4">
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="text-gray-700 font-medium">{dest.region ?? "Cartagena"}</span>
-                      <Plane className="w-4 h-4 text-gray-400" />
-                      <span className="text-gray-700 font-medium">{dest.name}</span>
-                    </div>
+        {/* IMAGE */}
+        <div className="relative h-48 md:h-56">
+          <Image
+            src={dest.image}
+            alt={dest.title}
+            fill
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
+          />
 
-                    <p className="text-sm text-gray-500 mb-3">{dest.duration ?? "Varies"} • {dest.shortDescription}</p>
+          {/* TAG */}
+          {dest.tag && (
+            <span className="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold shadow">
+              {dest.tag}
+            </span>
+          )}
 
-                    <div className="flex items-center justify-between">
-                      <p className="text-lg font-semibold text-gray-900">
-                        From {dest.currency ?? "USD"} {dest.priceFrom}
-                      </p>
+          {/* OVERLAY (hover) */}
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors" />
+        </div>
 
-                      <div className="flex items-center gap-2">
-                        {/* Internal route: use Link WITHOUT <a> */}
-                        <Link
-                          href={`/destinations/${dest.slug ?? dest.id}`}
-                          className="inline-flex items-center px-3 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-gray-800 bg-white hover:bg-gray-100"
-                        >
-                          Details
-                        </Link>
+        {/* CONTENT */}
+        <div className="p-5 flex flex-col gap-3">
+          {/* REGION & NAME */}
+          <div className="flex items-center gap-2 text-gray-600 text-sm">
+            <Plane className="w-4 h-4 text-gray-400" />
+            <span className="font-medium">{dest.tag ?? "Caribe"}</span>
+            <span className="text-gray-400">•</span>
+            <span className="font-medium">{dest.title}</span>
+          </div>
 
-                        {/* External WhatsApp: use plain <a> */}
-                        <a
-                          href={`https://wa.me/573054384698?text=Hola%2C%20estoy%20interesado%20en%20el%20paquete%20${encodeURIComponent(dest.name)}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-3 py-2 rounded-md text-sm font-medium text-white bg-green-600 hover:bg-green-700"
-                        >
-                          Book
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
+          {/* TITLE */}
+          <h3 className="text-lg font-bold text-gray-900 line-clamp-1">{dest.title}</h3>
+
+          {/* SHORT DESCRIPTION */}
+          <p className="text-sm text-gray-500 line-clamp-2">{dest.description}</p>
+
+          {/* PRICE + CTA */}
+          <div className="flex items-center justify-between mt-2 pt-2 border-t border-gray-200">
+            <div className="">
+              <span className="text-xs text-gray-500">Desde</span>
+              <p className="text-green-600 font-bold text-base">
+                {dest.price?.adults}
+              </p>
+            </div>
+
+            <div className="flex items-center gap-2">
+   
+
+              <a
+                href={`https://wa.me/573054384698?text=Hola!%20Quiero%20información%20de:%20${encodeURIComponent(dest.title)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3 py-1.5 text-xs font-medium bg-green-600 text-white rounded-md hover:bg-green-700 transition-colors"
+              >
+                Reservar
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </CarouselItem>
+  ))}
+</CarouselContent>
+
         </Carousel>
       </div>
     </motion.section>

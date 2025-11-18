@@ -71,13 +71,7 @@ export default function CompanyInfo({ isVisible }: CompanyInfoProps) {
                   <MessageCircle className="w-4 h-4" />
                   Chat with us
                 </a>
-                <a 
-                  href="tel:+573054384698" 
-                  className="inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-700 border border-gray-200 px-4 py-2.5 font-medium text-sm rounded-lg shadow hover:shadow-md transition-all duration-200 flex-1 sm:flex-none sm:px-6"
-                >
-                  <Phone className="w-4 h-4" />
-                  Call us
-                </a>
+               
               </div>
             </div>
           </div>
@@ -86,7 +80,7 @@ export default function CompanyInfo({ isVisible }: CompanyInfoProps) {
           <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
             <div className="aspect-square rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/images/colombian-guide-cartagena.png"
+                src="/images/pasadias/principal.jpg"
                 alt="Adventure by Colombia team"
                 width={600}
                 height={600}
