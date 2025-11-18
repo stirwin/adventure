@@ -144,8 +144,7 @@ export default function Navbar() {
                         // Add your routes for services here
                         if (val === "concierge")
                           router.push("/services/concierge");
-                        if (val === "production")
-                          router.push("/services/production");
+                        
                         if (val === "transportation")
                           router.push("/services/transportation");
                         if (val === "chef") router.push("/services/chef");
@@ -153,9 +152,6 @@ export default function Navbar() {
                     >
                       <DropdownMenuRadioItem value="concierge">
                         Concierge Services
-                      </DropdownMenuRadioItem>
-                      <DropdownMenuRadioItem value="production">
-                        Producción
                       </DropdownMenuRadioItem>
                       <DropdownMenuRadioItem value="transportation">
                         Transportation
